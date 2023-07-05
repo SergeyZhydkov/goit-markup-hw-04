@@ -114,7 +114,9 @@ img {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.active {
+  color: var(--ocean);
+}
 .nav-link::after {
   content: ;
 
@@ -165,6 +167,7 @@ img {
   font-weight: 400;
   letter-spacing: 0.02em;
   color: var(--text);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -230,6 +233,7 @@ img {
   border: none;
   border-radius: 4px;
   background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
@@ -506,7 +510,8 @@ img {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.set-link:hover.picture-text {
+.set-link:hover .picture-text,
+.set-link:focus .picture-text {
   transform: translateY(0%);
 }
 
@@ -722,7 +727,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon:hover,
-.modal-icon:focus {
+.modal-button:hover .modal-icon,
+.modal-button:focus .modal-icon {
   fill: #ffffff;
 }
